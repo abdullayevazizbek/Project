@@ -13,14 +13,14 @@ function Page(props) {
     const ref = useRef()
     useOnClickOutside(ref, () => dispatch(CategoryCloseAC()))
     return (
-        <div>
+        <>
             <Header />
             <Categories customRef={ref} />
             <Main>
                 {children}
             </Main>
             <Footer/>
-        </div>
+        </>
     )
 }
 
@@ -29,5 +29,5 @@ export default Page
 
 const Main = styled.div`
     padding-top: 150px;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
 `

@@ -9,7 +9,6 @@ import { CategoryOpenAC } from '../../redux/reducers/modalReducer'
 function HeaderMain() {
     const { categoryModal } = useSelector((state) => state.modalState)
     const dispatch = useDispatch()
-    console.log(categoryModal)
     return (
         <Wrapper>
             <Container>

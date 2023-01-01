@@ -27,6 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: relative;
         width: 100%;
         min-height: 100vh;

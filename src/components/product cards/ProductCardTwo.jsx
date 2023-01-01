@@ -5,20 +5,20 @@ import { Flex, H5, H6, Img, Small, Box } from '../index'
 import { VerifyIcon } from '../../assets/icons'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { GetProduct } from '../../redux/reducers/productsReducer'
-function ProductCardOne(props) {
+import { GetProducts } from '../../redux/reducers/productsReducers'
+function ProductCardTwo(props) {
     const dispatch = useDispatch()
 
     function productHandler(slug) {
-        dispatch(GetProduct(slug))
+        dispatch(GetProducts(slug))
     }
-    console.log(props.product);
 
+    console.log(props);
     const { product } = props
     return (
         <Link
-            to={`/product/${product.slug}`}
             onClick={() => productHandler(product.slug)}
+            to={`/product/${product.slug}`}
         >
             <Wrapper>
                 <ProductImg>
@@ -48,7 +48,7 @@ function ProductCardOne(props) {
     )
 }
 
-export default ProductCardOne
+export default ProductCardTwo
 
 const Wrapper = styled.div`
     display: flex;

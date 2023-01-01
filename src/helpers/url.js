@@ -6,6 +6,11 @@ export const APP_MODE = '/dev'
 
 export const BannersListUrl = '/events/list'
 
+// Brands
+
+export const BrandsListUrl = '/brand/list?page=1&featured=1&sort=id,asc'
+
+
 // Categories
 
 export const CategoriesListUrl = '/category/list'

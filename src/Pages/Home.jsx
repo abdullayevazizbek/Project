@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, ProductListSlider } from '../components'
+import { Banner, ProductListSliderOne,Brands,ProductCardTwo } from '../components'
 import Page from '../components/page/Page'
 
 function Home() {
@@ -7,7 +7,9 @@ function Home() {
     return (
         <Page>
             <Banner />
-            <ProductListSlider />
+            <ProductListSliderOne />
+            <ProductCardTwo/>
+            <Brands/>
         </Page>
     )
 }

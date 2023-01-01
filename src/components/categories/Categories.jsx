@@ -72,13 +72,12 @@ function Categories(props) {
 export default Categories
 
 const Wrapper = styled.div`
-    position: absolute;
+    position: fixed;
     top: 0;
     left: ${(props) => (props.open ? '0' : '-100%')};
     z-index: 10;
     transition: all 0.3s ease;
 `
-
 const StyledBox = styled(Box)`
     width: 330px;
     min-height: 70vh;

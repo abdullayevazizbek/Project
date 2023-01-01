@@ -8,7 +8,7 @@ function App() {
     const { categoryModal } = useSelector((state) => state.modalState)
 
     return (
-        <div>
+        <>
             <GlobalStyles open={categoryModal} />
 
             <Routes>
@@ -20,7 +20,7 @@ function App() {
                     />
                 ))}
             </Routes>
-        </div>
+        </>
     )
 }
 
