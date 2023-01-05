@@ -13,7 +13,7 @@ function ProductCardTwo(props) {
         dispatch(GetProducts(slug))
     }
 
-    console.log(props);
+    // console.log(props);
     const { product } = props
     return (
         // <Link

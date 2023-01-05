@@ -8,7 +8,8 @@ import Categories from './categories/Categories'
 import ProductListSliderOne from './product list/ProductListSliderOne'
 import Brands from './brands/Brands'
 import SectionTitle from './SectionTitle'
-import ProductCardTwo from './product cards/ProductCardTwo'
+import ProductListSliderTwo from './product list/ProductListSliderTwo'
+import Registration from './Registration/Registration'
 import {
     Typography,
     H1,
@@ -46,5 +47,7 @@ export {
     ProductListSliderOne,
     Brands,
     SectionTitle,
-    ProductCardTwo
+    ProductListSliderTwo,
+    Registration
+    
 }

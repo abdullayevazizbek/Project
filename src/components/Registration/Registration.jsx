@@ -6,36 +6,38 @@ import { H4, H5, SemiSpan } from '../index'
 function Registration() {
     return (
         <Wrapper>
-            <RegistrationPanel>
-                <RegistrationPanelNav>
-                    <H4>Войти / Регистрация</H4>
-                </RegistrationPanelNav>
-                <RegistrationPanelMain>
-                    <Telephone>
-                        <SemiSpan>
-                            Номер телефона
-                        </SemiSpan>
-                        <TelephoneInput placeholder='+998907134713' />
-                    </Telephone>
-                    <Telephone>
-                        <SemiSpan>
-                            Пароль
-                        </SemiSpan>
-                        <TelephoneInput type={'password'} placeholder='**********'  />
-                    </Telephone>
-                    <Telephone>
-                        <SemiSpan>
-                            Подтвердите пароль
-                        </SemiSpan>
-                        <TelephoneInput type={'password'} placeholder='**********' />
-                    </Telephone>
-                </RegistrationPanelMain>
-                <RegistrationPanelFooter>
-                    <ParolBtn>
-                        <H5>Получить код</H5>
-                    </ParolBtn>
-                </RegistrationPanelFooter>
-            </RegistrationPanel>
+            <WrapperModal>
+                <RegistrationPanel>
+                    <RegistrationPanelNav>
+                        <H4>Войти / Регистрация</H4>
+                    </RegistrationPanelNav>
+                    <RegistrationPanelMain>
+                        <Telephone>
+                            <SemiSpan>
+                                Email
+                            </SemiSpan>
+                            <TelephoneInput type={'email'} placeholder='Email' />
+                        </Telephone>
+                        <Telephone>
+                            <SemiSpan>
+                                Пароль
+                            </SemiSpan>
+                            <TelephoneInput type={'password'} placeholder='**********' />
+                        </Telephone>
+                        <Telephone>
+                            <SemiSpan>
+                                Подтвердите пароль
+                            </SemiSpan>
+                            <TelephoneInput type={'password'} placeholder='**********' />
+                        </Telephone>
+                    </RegistrationPanelMain>
+                    <RegistrationPanelFooter>
+                        <ParolBtn>
+                            <H5>Получить код</H5>
+                        </ParolBtn>
+                    </RegistrationPanelFooter>
+                </RegistrationPanel>
+            </WrapperModal>
         </Wrapper>
 
 
@@ -45,6 +47,12 @@ function Registration() {
 export default Registration
 
 const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+const WrapperModal = styled.div`
+    overflow: visible;
     width: 100%;
     height: 100%;
     position: absolute;

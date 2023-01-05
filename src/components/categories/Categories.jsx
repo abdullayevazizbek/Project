@@ -75,7 +75,7 @@ const Wrapper = styled.div`
     position: fixed;
     top: 0;
     left: ${(props) => (props.open ? '0' : '-100%')};
-    z-index: 5;
+    z-index: 10;
     transition: all 0.3s ease;
 `
 const StyledBox = styled(Box)`

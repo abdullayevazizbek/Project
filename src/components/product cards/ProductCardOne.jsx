@@ -12,7 +12,7 @@ function ProductCardOne(props) {
     function productHandler(slug) {
         dispatch(GetProduct(slug))
     }
-    console.log(props.product);
+    // console.log(props.product);
 
     const { product } = props
     return (
