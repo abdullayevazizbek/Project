@@ -1,6 +1,7 @@
 import React from 'react'
 import { Banner, ProductListSliderOne,Brands,ProductCardTwo } from '../components'
 import Page from '../components/page/Page'
+import Registration from '../components/Registration/Registration'
 
 function Home() {
 
@@ -8,8 +9,9 @@ function Home() {
         <Page>
             <Banner />
             <ProductListSliderOne />
-            <ProductCardTwo/>
+            {/* <ProductCardTwo/> */}
             <Brands/>
+            <Registration/>
         </Page>
     )
 }

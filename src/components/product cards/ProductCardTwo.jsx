@@ -16,10 +16,10 @@ function ProductCardTwo(props) {
     console.log(props);
     const { product } = props
     return (
-        <Link
-            onClick={() => productHandler(product.slug)}
-            to={`/product/${product.slug}`}
-        >
+        // <Link
+        //     onClick={() => productHandler(product.slug)}
+        //     // to={`/product/${product.slug}`}
+        // >
             <Wrapper>
                 <ProductImg>
                     <Img src={product.image} objectFit='contain' />
@@ -44,7 +44,7 @@ function ProductCardTwo(props) {
                 </Box>
             </Wrapper>
 
-        </Link>
+        // </Link>
     )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CategoryIcon, Logo, SearchIcon } from '../../assets/icons'
+import { CategoryIcon, Logo, SearchIcon, OrderBtnIcon, HearteBtnIcon, BacketBtnIcon, RegistrationBtnIcon } from '../../assets/icons'
 import { colors } from './../../helpers/colors'
-import { Box, Container, Flex, Span } from '../index'
+import { Box, Container, SemiSpan, Span } from '../index'
 import { useDispatch, useSelector } from 'react-redux'
 import { CategoryOpenAC } from '../../redux/reducers/modalReducer'
 
@@ -12,12 +12,12 @@ function HeaderMain() {
     return (
         <Wrapper>
             <Container>
-                <Flex>
+                <HeaderMainWrapp>
                     <Box mr='64px'>
                         <Logo />
                     </Box>
 
-                    <Flex>
+                    <Wrapp>
                         <CategoryMenuBtn
                             onClick={() => dispatch(CategoryOpenAC())}
                         >
@@ -31,8 +31,34 @@ function HeaderMain() {
                                 <SearchIcon />
                             </SearchBtn>
                         </SearchWrapper>
-                    </Flex>
-                </Flex>
+                        <IconsWrap>
+                            <IconsWrapBtns>
+                                <OrderBtnIcon />
+                                <SemiSpan>
+                                    Мои заказы
+                                </SemiSpan>
+                            </IconsWrapBtns>
+                            <IconsWrapBtns>
+                                <HearteBtnIcon />
+                                <SemiSpan>
+                                    Избранное
+                                </SemiSpan>
+                            </IconsWrapBtns>
+                            <IconsWrapBtns>
+                                <BacketBtnIcon />
+                                <SemiSpan>
+                                    Корзина
+                                </SemiSpan>
+                            </IconsWrapBtns>
+                            <RegistrationBtn>
+                                <RegistrationBtnIcon />
+                                <SemiSpan>
+                                    Регистрация
+                                </SemiSpan>
+                            </RegistrationBtn>
+                        </IconsWrap>
+                    </Wrapp>
+                </HeaderMainWrapp>
             </Container>
         </Wrapper>
     )
@@ -54,12 +80,20 @@ const CategoryMenuBtn = styled.button`
     background: ${colors.blue['600']};
     border-radius: 0px 20px 0px 0px;
 `
+const HeaderMainWrapp = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
+
 
 const SearchWrapper = styled.div`
     overflow: hidden;
     margin: 0 14px;
     width: 450px;
     display: flex;
+    height: 36px;
     border: 1px solid ${colors.blue['700']};
     border-radius: 10px;
 `
@@ -78,7 +112,11 @@ const SearchInput = styled.input`
         color: '#BEBEBE';
     }
 `
-
+const Wrapp = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
 const SearchBtn = styled.button`
     width: 62px;
     height: 36px;
@@ -87,4 +125,28 @@ const SearchBtn = styled.button`
     justify-content: center;
     background-color: ${colors.blue['700']};
     border-radius: 10px;
+`
+const IconsWrap = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+const IconsWrapBtns = styled.button`
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+`
+const RegistrationBtn = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px ;
+    border: none;
+    border-radius: 5px;
+    background-color: ${colors.blue['500']};
+    color: ${colors.white};
+    
 `

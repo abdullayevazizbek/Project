@@ -9,6 +9,10 @@ import VerifyIcon from './VerifyIcon'
 import RefreshIcon from './RefreshIcon'
 import DeliveryIcon from './DeliveryIcon'
 import HangerIcon from './HangerIcon'
+import RegistrationBtnIcon from './RegistrationBtnIcon'
+import OrderBtnIcon from './OrderBtnIcon'
+import HearteBtnIcon from './HerteBtnIcon'
+import BacketBtnIcon from './BacketBtnIcon'
 
 export {
     LocationIcon,
@@ -22,4 +26,8 @@ export {
     RefreshIcon,
     DeliveryIcon,
     HangerIcon,
+    RegistrationBtnIcon,
+    OrderBtnIcon,
+    HearteBtnIcon,
+    BacketBtnIcon
 }
