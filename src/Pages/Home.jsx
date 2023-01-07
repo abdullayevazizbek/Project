@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, ProductListSliderOne,Brands,ProductListSliderTwo,Registration } from '../components'
+import { Banner, ProductListSliderOne,Brands,ProductListSliderTwo } from '../components'
 import Page from '../components/page/Page'
 
 function Home() {
@@ -10,7 +10,6 @@ function Home() {
             <ProductListSliderOne />
             <ProductListSliderTwo/>
             <Brands/>
-            <Registration/>
         </Page>
     )
 }

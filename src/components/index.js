@@ -9,7 +9,8 @@ import ProductListSliderOne from './product list/ProductListSliderOne'
 import Brands from './brands/Brands'
 import SectionTitle from './SectionTitle'
 import ProductListSliderTwo from './product list/ProductListSliderTwo'
-import Registration from './Registration/Registration'
+import LoginModal from './LoginModal/LoginModal.'
+import Footer from './Footer/Footer'
 import {
     Typography,
     H1,
@@ -26,6 +27,8 @@ import {
 
 export {
     Header,
+    LoginModal,
+    Footer,
     GlobalStyles,
     Container,
     Box,
@@ -48,6 +51,4 @@ export {
     Brands,
     SectionTitle,
     ProductListSliderTwo,
-    Registration
-    
 }

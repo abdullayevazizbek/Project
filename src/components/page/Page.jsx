@@ -6,6 +6,7 @@ import { CategoryCloseAC } from '../../redux/reducers/modalReducer'
 import Categories from '../categories/Categories'
 import Footer from '../Footer/Footer'
 import Header from '../header/Header'
+import LoginModal from '../LoginModal/LoginModal.'
 
 function Page(props) {
     const { children } = props
@@ -16,6 +17,7 @@ function Page(props) {
         <>
             <Header />
             <Categories customRef={ref} />
+            <LoginModal/>
             <Main>
                 {children}
             </Main>
